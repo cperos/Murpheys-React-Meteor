@@ -14,7 +14,8 @@ export default class TopMenu extends React.Component {
               <Dropdown.Item>Catering/Private Events</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Menu.Item>St. Patrick Day</Menu.Item>
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          <Menu.Item>St. Patrick's Day</Menu.Item>
           <Dropdown item text="Menus">
             <Dropdown.Menu>
               <Dropdown.Item>Lunch Menu</Dropdown.Item>
