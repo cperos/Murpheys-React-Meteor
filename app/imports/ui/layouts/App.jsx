@@ -6,7 +6,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Landing from '../pages/Landing';
+import Murphys from '../pages/Murphys';
 import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
@@ -17,6 +17,7 @@ import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
+
 class App extends React.Component {
   render() {
     return (
@@ -24,7 +25,7 @@ class App extends React.Component {
         <div>
           <NavBar/>
           <Switch>
-            <Route exact path="/" component={Landing}/>
+            <Route exact path="/" component={Murphys}/>
             <Route path="/signin" component={Signin}/>
             <Route path="/signup" component={Signup}/>
             <Route path="/signout" component={Signout}/>
